@@ -1,0 +1,9 @@
+title : Elementary - Jekyll Blog Theme
+name: 'Elementary Jekyll Theme'
+description: 'Simple, light weight, responsive jekyll theme for the hackers'
+
+markdown: kramdown
+highlighter: rouge
+baseurl: /
+
+permalink: /:title

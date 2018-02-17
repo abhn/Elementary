@@ -1,0 +1,36 @@
+---
+layout: default
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<header>
+    <h3>{{ page.title }}</h3>
+    <header>
+        <time datetime="{{ page.date | date: '%-d %B, %Y. It was a %A.' }}">{{ page.date | date_to_string }}</time>
+    </header>
+</header>
+        
+<hr/>
+
+<main role="main">
+    <article>
+        <section>
+            {{content}}
+        </section>
+
+        <br/>
+
+        <footer>
+            <section class="pagination">
+              {% if page.previous.url %}
+                <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+              {% endif %}
+              {% if page.next.url %}
+                <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+              {% endif %}
+            </section>
+        </footer>
+    </article>
+</main>
