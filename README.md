@@ -29,14 +29,14 @@ Find it here:
 ### Screenshots
 
 <div style="background-color: black;">
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop-post-top.png?raw=true">
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop-post-bottom.png?raw=true">
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop.png?raw=true">
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-360px.png?raw=true">
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-360px.png?raw=true">
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-page-top.png?raw=true">
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-post-top.png?raw=true">
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-post-footer.png?raw=true">    
+    <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop-post-top.png?raw=true" style="border: 2px solid black">
+    <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop-post-bottom.png?raw=true" style="border: 2px solid black">
+    <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop.png?raw=true" style="border: 2px solid black">
+    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-360px.png?raw=true" style="border: 2px solid black">
+    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-360px.png?raw=true" style="border: 2px solid black">
+    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-page-top.png?raw=true" style="border: 2px solid black">
+    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-post-top.png?raw=true" style="border: 2px solid black">
+    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-post-footer.png?raw=true" style="border: 2px solid black">    
 </div>
 
 ### Customization
