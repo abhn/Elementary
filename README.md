@@ -33,7 +33,7 @@ Find it here:
     - `_/layout/post.html` Page for `layout: post`, inherits `default`
     - `_/layout/page.html` Page for `layout: page`, inherits `default`
 
-### Screenshots
+<!-- ### Screenshots
 
 <div>
     <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop.png?raw=true">
@@ -54,7 +54,7 @@ Find it here:
     <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-post-footer.png?raw=true">    
     <p>Mobile Page Bottom</p>
     <hr/>
-</div>
+</div> -->
 
 ### Credits
 - Eric S Raymond (http://www.catb.org/~esr/hacker-emblem/glider.png) for the favicon
