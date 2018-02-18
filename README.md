@@ -26,6 +26,13 @@ Find it here:
 - Open `_config.yml` and set the variables
 - Run `jekyll serve` and your blog should be live on `http://localhost:4000`. Make changes, test them locally, commit your changes and push to your fork. Your changes should be live in a couple of seconds
 
+
+### Customization
+- `_config.yml` Config variables
+- `_/layouts/default.html` Default page with head and footer section
+    - `_/layout/post.html` Page for `layout: post`, inherits `default`
+    - `_/layout/page.html` Page for `layout: page`, inherits `default`
+
 ### Screenshots
 
 <div>
@@ -48,11 +55,6 @@ Find it here:
     <p>Mobile Page Bottom</p>
     <h3/>    
 </div>
-
-### Customization
-- `_/layouts/default.html` Default page with head and footer section
-    - `_/layout/post.html` - Page for `layout: post`, inherits `default`
-    - `_/layout/page.html` - Page for `layout: page`, inherits `default`
 
 ### Credits
 - Eric S Raymond (http://www.catb.org/~esr/hacker-emblem/glider.png) for the favicon
