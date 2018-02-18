@@ -9,14 +9,15 @@
     
     <title>
       {% if page.title == "Home" %}
-        {{ site.title }}
-      {% else %}
-        {{ page.title }} &middot; {{ site.title }}
+        .: {{ site.title }} :.
+      {% else %} .: {{ page.title }} &middot; {{ site.title }} :.
       {% endif %}
     </title>
 
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+
     <style>
-    *,iframe,img,video{word-wrap:break-word}iframe,img,video{max-width:100%}.pd{width:5em;text-align:center;flex-shrink:0}.parent div{display:flex}@media screen and (max-width:600px){.pd{display:none}.parent div{padding-bottom:1em}}.np{display:flex;flex-direction:row;justify-content:space-between;padding-bottom:.5em;font-style:italic}.np href{flex-grow:1}.prev{width:50%;float:left;text-align:left}.next{width:50%;float:right;text-align:right}.pagination::after{content:"";clear:both;display:block}body,html{height:100%}body{display:flex;flex-direction:column}.content{flex:1 0 auto}footer{flex-shrink:0}
+    *,iframe,img,video{word-wrap:break-word}iframe,img,video{max-width:100%}.pd{width:5em;text-align:center;flex-shrink:0}.parent div{display:flex}@media screen and (max-width:600px){.pd{display:none}.parent div{padding-bottom:1em}}.np{display:flex;flex-direction:row;justify-content:space-between;padding-bottom:.5em;font-style:italic}.np href{flex-grow:1}.prev{width:50%;float:left;text-align:left}.next{width:50%;float:right;text-align:right}.pagination::after{content:"";clear:both;display:block}body,html{height:100%}body{display:flex;flex-direction:column;margin:0 8px 0}.content{flex:1 0 auto}footer{flex-shrink:0}
     </style>
 </head>
 
@@ -29,7 +30,7 @@
   <footer>
     <hr/>
     <section>
-        <a href='{{ site.baseurl }}'>Home</a> |         
+        <a href='/'>Home</a> |         
         <a href='{{ site.baseurl }}{{ page.about }}'>About</a> | 
         <a href='https://github.com/abhn'>Github</a> |
         <a href="{{ site.baseurl }}feed.xml">Subscribe</a>
