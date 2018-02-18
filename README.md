@@ -38,6 +38,10 @@ Find it here: <a href="https://elementary-jekyll.github.io/">https://elementary-
 <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop.png?raw=true">
 <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile.png?raw=true">
 
+### Performance
+
+<img src="https://github.com/abhn/Elementary/blob/master/tmp/perf.png?raw=true">
+
 ### Credits
 - Eric S Raymond (http://www.catb.org/~esr/hacker-emblem/glider.png) for the favicon
 
