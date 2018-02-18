@@ -7,7 +7,7 @@ The theme is highly customizable, takes less than 100 miliseconds to load, weigh
 <img src="https://github.com/abhn/Elementary/blob/master/tmp/multi-display.png?raw=true">
 
 ### Demo
-Find it here: 
+Find it here: <a href="https://elementary-jekyll.github.io/">https://elementary-jekyll.github.io/</a>
 
 ### Features
 - Ultra lightweight, ~6-9KB gzip'd, load times consistently less than 100 milliseconds (as tested on my personal blog with Cloudflare)
