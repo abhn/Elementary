@@ -33,28 +33,10 @@ Find it here: <a href="https://elementary-jekyll.github.io/">https://elementary-
     - `_/layout/post.html` Page for `layout: post`, inherits `default`
     - `_/layout/page.html` Page for `layout: page`, inherits `default`
 
-<!-- ### Screenshots
+### Screenshots
 
-<div>
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop.png?raw=true">
-    <p>Desktop Homepage</p>
-    <hr/>
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop-post-top.png?raw=true">
-    <p>Desktop Post Top</p>
-    <hr/>
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop-post-bottom.png?raw=true">
-    <p>Desktop Post Bottom</p>
-    <hr/>
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-360px.png?raw=true">
-    <p>Mobile 360px Home</p>
-    <hr/>
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-page-top.png?raw=true">
-    <p>Mobile Page Top</p>
-    <hr/>
-    <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-post-footer.png?raw=true">    
-    <p>Mobile Page Bottom</p>
-    <hr/>
-</div> -->
+<img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop.png?raw=true">
+<img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile.png?raw=true">
 
 ### Credits
 - Eric S Raymond (http://www.catb.org/~esr/hacker-emblem/glider.png) for the favicon
