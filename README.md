@@ -38,22 +38,22 @@ Find it here:
 <div>
     <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop.png?raw=true">
     <p>Desktop Homepage</p>
-    <h3/>
+    <hr/>
     <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop-post-top.png?raw=true">
     <p>Desktop Post Top</p>
-    <h3/>    
+    <hr/>
     <img src="https://github.com/abhn/Elementary/blob/master/tmp/desktop-post-bottom.png?raw=true">
     <p>Desktop Post Bottom</p>
-    <h3/>    
+    <hr/>
     <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-360px.png?raw=true">
     <p>Mobile 360px Home</p>
-    <h3/>    
+    <hr/>
     <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-page-top.png?raw=true">
     <p>Mobile Page Top</p>
-    <h3/>    
+    <hr/>
     <img src="https://github.com/abhn/Elementary/blob/master/tmp/mobile-post-footer.png?raw=true">    
     <p>Mobile Page Bottom</p>
-    <h3/>    
+    <hr/>
 </div>
 
 ### Credits
