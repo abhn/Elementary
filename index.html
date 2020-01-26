@@ -1,29 +1,32 @@
 ---
 layout: default
-title: Home
 cover: false
-about: 'about.html'
 ---
 
 <header>
-    <h3>{{ site.name }}</h3>
-    <h4>
-        <a href='{{ site.baseurl }}{{ page.about }}'>About</a> | 
-        <a href='https://github.com/abhn'>Github</a> |
-        <a href="{{ site.baseurl }}feed.xml">Subscribe</a>
-    </h4>
+  <h1>{{ site.name }}</h1>
 </header>
-    
-<hr/>
 
- <main class="parent">
-    {% for post in site.posts %}
-        <div>
-            <div class="pd">{{ post.date | date: "%m/%Y" }}</div> 
-            <a href="{{ post.url }}">
+<hr class="stylish"/>
+
+<main class="home-main">
+  {% if site.posts.size > 0 %}
+    <section id="posts">
+      <details open>
+        <summary>
+          <h3 class="home-page-heading">Essays</h3>
+        </summary>
+        <div class="parent">
+          {% for post in site.posts %}
+            <div class="post-wrapper">
+              <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m/%Y" }}</time>
+              <a class="post-link" href="{{ post.url }}">
                 {{ post.title }}
-            </a>
+              </a>
+            </div>
+          {% endfor %}
         </div>
-    {% endfor %}
+      </details>
+    </section>
+  {% endif %}
 </main>
-

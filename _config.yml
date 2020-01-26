@@ -1,9 +1,26 @@
 title : Elementary - Jekyll Blog Theme
 name: 'Elementary Jekyll Theme'
-description: 'Simple, light weight, responsive jekyll theme for the hackers'
+description: 'Simple, light weight, responsive jekyll theme for hackers'
 
 markdown: kramdown
 highlighter: rouge
 baseurl: /
-
 permalink: /:title
+
+featured_posts_title: Unrelated
+featured_posts:
+  - url: '#'
+    title: 'Featured post #1'
+  - url: '#'
+    title: 'Featured post #2'
+  - url: '#'
+    title: 'Featured post #3'
+
+# Uncomment the following section to add custom collections (by default we have only _posts)
+#collections:
+#  my_custom_collection:
+#    output: true
+#    permalink: /my_custom_path/:title.html
+
+plugins:
+  - jekyll-sitemap

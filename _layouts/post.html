@@ -2,32 +2,46 @@
 layout: default
 ---
 
+<div id="_progress"></div>
+
 <header>
-    <h3>{{ page.title }}</h3>
-    <header>
-        <time datetime="{{ page.date | date: '%-d %B, %Y. It was a %A.' }}">{{ page.date | date_to_string }}</time>
-    </header>
+  <h1>{{ page.title }}</h1>
+  <header class="title-tags">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B, %Y. It was a %A.' }}</time>
+    <div class="tags-container">
+      Posted under <span>
+          {% for tag in page.tags %}
+            <a class="tags" href="/tags#{{ tag }}">{{ tag }}</a>
+          {% endfor %}
+        </span>
+      &nbsp;
+    </div>
+  </header>
 </header>
-        
-<hr/>
+
+<hr class="stylish" />
 
 <main role="main">
-    <article>
-        <section>
-            {{content}}
-        </section>
 
-        <br/>
+  <article>
 
-        <footer>
-            <section class="pagination">
-              {% if page.previous.url %}
-                <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-              {% endif %}
-              {% if page.next.url %}
-                <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-              {% endif %}
-            </section>
-        </footer>
-    </article>
+    <section>
+      {{content}}
+    </section>
+
+    <hr class="stylish"/>
+    {% include featured.html %}
+    <hr class="stylish"/>
+
+    <section class="pagination">
+      {% if page.previous.url %}
+      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+      {% endif %}
+      {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+      {% endif %}
+    </section>
+
+  </article>
+
 </main>
