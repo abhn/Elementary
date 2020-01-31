@@ -4,15 +4,7 @@ title: Tags
 ---
 
 {% assign alldocs = site.documents %}
-  {% assign alltags =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag %}
-  {%- for tag in grouptag -%}
-<!--  <h1>{{- tag.name -}} - {{tag.size}}</h1>-->
-  {%- for document in alldocs -%}
-  {% if document.tags contains tag.name %}
-<!--  <p>{{- document.title -}}-->
-    {% endif %}
-    {%- endfor -%}
-    {%- endfor -%}
+{% assign alltags =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag %}
 
 <p>
   Articles on similar topics are grouped together by tags. Click on any tag to find all the articles 'tagged' with that tag.
