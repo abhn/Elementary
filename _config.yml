@@ -4,6 +4,7 @@ description: 'Simple, light weight, responsive jekyll theme for hackers'
 
 markdown: kramdown
 highlighter: rouge
+javascript_enabled: true
 
 featured_posts_title: Unrelated
 featured_posts:

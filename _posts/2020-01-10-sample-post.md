@@ -58,4 +58,5 @@ HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a a
 | cell4   | cell5   | cell6   |
 |=====
 | Foot1   | Foot2   | Foot3
-{: rules="groups"}
+
+This is a [link](https://example.com)
