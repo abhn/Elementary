@@ -16,7 +16,7 @@ const init = () => {
 
 const checkCookie = () => {
   if(getCookie('nightMode')) {
-    toggle();
+    toggleDarkMode();
   }
 };
 
@@ -26,10 +26,11 @@ const handleNightModeToggle = () => {
   } else {
     setCookie('nightMode', true, 365);
   }
-  toggle();
+  toggleDarkMode();
 };
 
-const toggle = () => {
+// dark mode toggle
+const toggleDarkMode = () => {
   const darkSwitchesArray = document.querySelectorAll('.dark-light-switch');
   darkSwitchesArray.forEach(darkSwitch => {
     darkSwitch.innerHTML = getCookie('nightMode') ? light : dark;
@@ -58,13 +59,16 @@ function getCookie(name) {
   }
   return null;
 }
+// end cookie getter/setter
 
+// the post scroll bar on top of posts
 let scrollPercent;
 let scrollListener = () => {
   let scrollTop = document.documentElement["scrollTop"] || document.body["scrollTop"];
   let scrollBottom = (document.documentElement["scrollHeight"] ||
     document.body["scrollHeight"]) - document.documentElement.clientHeight;
   scrollPercent = scrollTop / scrollBottom * 100 + "%";
-  document.getElementById("_progress").style.setProperty("--scroll", scrollPercent);
+  let progress = document.getElementById("_progress");
+  progress && progress.style.setProperty("--scroll", scrollPercent);
 };
 document.addEventListener("scroll", scrollListener, { passive: true });

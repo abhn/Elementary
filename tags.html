@@ -3,34 +3,34 @@ layout: page
 title: Tags
 ---
 
+{% assign alldocs = site.documents %}
+  {% assign alltags =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag %}
+  {%- for tag in grouptag -%}
+<!--  <h1>{{- tag.name -}} - {{tag.size}}</h1>-->
+  {%- for document in alldocs -%}
+  {% if document.tags contains tag.name %}
+<!--  <p>{{- document.title -}}-->
+    {% endif %}
+    {%- endfor -%}
+    {%- endfor -%}
+
 <p>
   Articles on similar topics are grouped together by tags. Click on any tag to find all the articles 'tagged' with that tag.
 </p>
 <ul class="tag-box">
-  {% assign tags_list = site.tags %}
-    {% for tag in tags_list %}
-    	<li><a href="#{{ tag[0] }}">{{ tag[0] }} <span>{{ tag[1].size }}</span></a></li>
+    {% for tag in alltags %}
+    	<li><a href="#{{ tag.name | slugify }}">{{ tag.name }} <span>{{ tag.size }}</span></a></li>
     {% endfor %}
   {% assign tags_list = nil %}
 </ul>
 
-{% for tag in site.tags %}
-  <h2 class="nice-title" name="{{ tag[0] }}" id="{{ tag[0] }}">{{ tag[0] }}</h2>
+{% for tag in alltags %}
+  <h2 class="nice-title" id="{{ tag.name }}">{{ tag.name }}</h2>
   <ul>
-    {% assign pages_list = tag[1] %}
-
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if group == null or group == node.group %}
-        	{% if page.url == node.url %}
-        	<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
-        	{% else %}
-        	<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
-        	{% endif %}
-        {% endif %}
+    {%- for document in alldocs -%}
+      {% if document.tags contains tag.name %}
+        <li><a href="{{ document.url }}">{{ document.title }}</a></li>
       {% endif %}
     {% endfor %}
-  {% assign pages_list = nil %}
-  {% assign group = nil %}
   </ul>
 {% endfor %}

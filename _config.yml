@@ -4,8 +4,6 @@ description: 'Simple, light weight, responsive jekyll theme for hackers'
 
 markdown: kramdown
 highlighter: rouge
-baseurl: /
-permalink: /:title
 
 featured_posts_title: Unrelated
 featured_posts:
@@ -16,11 +14,27 @@ featured_posts:
   - url: '#'
     title: 'Featured post #3'
 
-# Uncomment the following section to add custom collections (by default we have only _posts)
-#collections:
-#  my_custom_collection:
-#    output: true
-#    permalink: /my_custom_path/:title.html
+collections:
+  news:
+    title: News
+    default_open: false
+    output: true
+  posts:
+    title: Essays
+    default_open: true
+    output: true
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      title: Essays
+      permalink: /post/:title
+  - scope:
+      type: news
+    values:
+      title: News
+      permalink: /news/:title
 
 plugins:
   - jekyll-sitemap

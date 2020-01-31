@@ -27,7 +27,12 @@ footer {
 
 *, iframe, img, video {
   word-wrap: break-word;
-  max-width:100%
+  max-width:100%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
 }
 
 code, pre {
