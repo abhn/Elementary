@@ -1,43 +1,23 @@
 <!DOCTYPE html>
-<html>
-<head>
-  
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="{{ site.meta_description}}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>
-      {% if page.title == "Home" %}
-        .: {{ site.title }} :.
-      {% else %} .: {{ page.title }} &middot; {{ site.title }} :.
-      {% endif %}
-    </title>
-
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
-
-    <style>
-    *,iframe,img,video{word-wrap:break-word}iframe,img,video{max-width:100%}.pd{width:5em;text-align:center;flex-shrink:0}.parent div{display:flex}@media screen and (max-width:600px){.pd{display:none}.parent div{padding-bottom:1em}}.np{display:flex;flex-direction:row;justify-content:space-between;padding-bottom:.5em;font-style:italic}.np href{flex-grow:1}.prev{width:50%;float:left;text-align:left}.next{width:50%;float:right;text-align:right}.pagination::after{content:"";clear:both;display:block}body,html{height:100%}body{display:flex;flex-direction:column;margin:0 8px 0}.content{flex:1 0 auto}footer{flex-shrink:0}
-    </style>
-</head>
-
+<html lang="en">
+{% include head.html %}
 <body>
-
-  <div class="content">
-    {{ content }}
+<div class="container">
+  {% include nav.html %}
+  <hr class="stylish"/>
+  {{ content }}
+</div>
+<footer>
+  <hr class="stylish"/>
+  {% include nav.html %}
+  <div>
+    Theme: <a href="https://github.com/abhn/Elementary">Elementary</a>
+    <br/>
+    <a>{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }}
   </div>
-
-  <footer>
-    <hr/>
-    <section>
-        <a href='/'>Home</a> |         
-        <a href='{{ site.baseurl }}{{ page.about }}'>About</a> | 
-        <a href='https://github.com/abhn'>Github</a> |
-        <a href="{{ site.baseurl }}feed.xml">Subscribe</a>
-    </section>
-    <section>
-      <a>{{ site.name }}</a> &copy; 2017
-    </section>
-  </footer>
+</footer>
+{% if site.javascript_enabled %}
+  <script src="/assets/main.js"></script>
+{% endif %}
 </body>
 </html>

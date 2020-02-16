@@ -1,0 +1,8 @@
+<aside class="featured-posts">
+  <h3>{{ site.featured_posts_title}}</h3>
+  <ul>
+    {% for post in site.featured_posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</aside>

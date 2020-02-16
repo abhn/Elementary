@@ -1,0 +1,36 @@
+{% if page.layout == 'post' %}
+  {% assign description = page.excerpt %}
+{% else %}
+  {% assign description = site.description %}
+{% endif %}
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="{{ description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncate: 160 }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/main.css"/>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml" />
+  <title>{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>
+  {% if page.layout == 'post' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": "{{ site.author.name }}",
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "headline": "{{ page.title }}",
+        "url": "{{ site.url }}{{ page.url }}",
+        "inLanguage": "en-US",
+        "isFamilyFriendly": "true",
+        "keywords": "{{ page.tags| join: ", " }}",
+        "image": "{{ site.url }}/favicon.ico",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ site.url }}{{ page.url }}"
+       }
+      }
+    </script>
+  {% endif %}
+</head>

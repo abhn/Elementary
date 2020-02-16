@@ -1,0 +1,43 @@
+body.dark  {
+  background-color: var(--color__gray--dark);
+  color: var(--color__gray--light);
+
+  a {
+    color: var(--color__gray--light)
+  }
+  a:hover {
+    background-color: var(--color__gray--light);
+    color: var(--color__gray--dark);
+  }
+  p {
+    color: var(--color__gray--light);
+  }
+  blockquote {
+    border-left: 5px solid var(--color__gray--light);
+    color: var(--color__gray--light)
+  }
+  code, pre {
+    color: var(--color__gray--dark);
+    font-family: var(--typography__default);
+  }
+  .tags {
+    background-color: var(--color__gray--light);
+    color: var(--color__gray--dark);
+  }
+  li {
+    color: var(--color__gray--light)
+  }
+  figcaption {
+    color: var(--color__gray--light)
+  }
+  hr.stylish {
+    background-image: linear-gradient(to right, rgba(white, 0.90), rgba(white, 0.45), rgba(white, 0));
+  }
+  input {
+    background-color: var(--color__gray--dark);
+    color: var(--color__gray--light)
+  }
+  input::placeholder {
+    color: var(--color__gray--light)
+  }
+}

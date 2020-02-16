@@ -1,9 +1,41 @@
 title : Elementary - Jekyll Blog Theme
 name: 'Elementary Jekyll Theme'
-description: 'Simple, light weight, responsive jekyll theme for the hackers'
+description: 'Simple, light weight, responsive jekyll theme for hackers'
 
 markdown: kramdown
 highlighter: rouge
-baseurl: /
+javascript_enabled: true
 
-permalink: /:title
+featured_posts_title: Unrelated
+featured_posts:
+  - url: '#'
+    title: 'Featured post #1'
+  - url: '#'
+    title: 'Featured post #2'
+  - url: '#'
+    title: 'Featured post #3'
+
+collections:
+  news:
+    title: News
+    default_open: false
+    output: true
+  posts:
+    title: Essays
+    default_open: true
+    output: true
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      title: Essays
+      permalink: /post/:title
+  - scope:
+      type: news
+    values:
+      title: News
+      permalink: /news/:title
+
+plugins:
+  - jekyll-sitemap

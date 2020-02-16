@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--typography__default);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 8px auto;
+}
+
+.container {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+*, iframe, img, video {
+  word-wrap: break-word;
+  max-width:100%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+code, pre {
+  font-family: var(--typography__default);
+  background-color: #eee;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  padding: 5px;
+  overflow-x: scroll;
+}
+
+.highlight {
+  position: relative;
+  border-radius: 5px;
+
+  * {
+    font-family: monospace, monospace;
+    background-color: unset;
+    padding: unset;
+    letter-spacing: unset;
+  }
+
+  & > pre {
+    padding: 8px 12px;
+
+    & > code::before {
+      content: attr(data-lang);
+      position: absolute;
+      right: 20px;
+      top: -10px;
+      padding: 0 7.5px;
+      border: 1px solid #828282;
+      border-radius: 5px;
+      text-align: center;
+      color: #8fbc8f;
+      background-color: #1a1a1a;
+    }
+
+    .lineno {
+      color: #608079;
+      padding-right: 5px;
+      margin-right: 10px;
+      border-right: 1px solid #656565;
+    }
+  }
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  background-color: #333;
+  color: #eee;
+}
+
+.post-date {
+  width: 5em;
+  flex-shrink: 0;
+}
+
+.post-wrapper {
+  display: flex;
+  margin: 0.8em 0;
+  font-size: 1.25rem;
+}
+
+.prev {
+  max-width: 50%;
+  float: left;
+  text-align: left;
+}
+
+.next {
+  max-width: 50%;
+  float: right;
+  text-align: right
+}
+
+.pagination {
+  font-size: 1.25rem;
+  padding: 1rem 0;
+}
+
+.pagination::after {
+  content: "";
+  clear: both;
+  display: block
+}
+
+blockquote {
+  margin: 0;
+  padding: 0.5em;
+  border-left: 5px solid black;
+  font-size: 1.25rem;
+  line-height: 1.6em;
+  color: #333;
+  font-style: italic;
+}
+
+.title-tags {
+  color: #777;
+  font-size: 1.125rem;
+}
+
+.tag-box {
+  text-transform: capitalize;
+}
+
+.nice-title {
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.6em;
+  color: #333;
+  margin: 1.25rem 0;
+}
+
+.tags {
+  background-color: #444;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0.75rem 0;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  margin: .75rem 0;
+  letter-spacing: .5px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0.75rem 0;
+  letter-spacing: 0.5px;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin: 0.75rem 0;
+  letter-spacing: 0.5px;
+}
+
+h5, h6 {
+  margin: 0.75rem 0;
+  letter-spacing: 0.5px;
+}
+
+section h3 {
+  margin-top: 40px;
+  font-size: 1.25rem;
+}
+
+h3.home-page-heading {
+  margin: 5px 0;
+  display: inline-block;
+}
+
+.tags-container {
+  margin: 10px auto;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  font-size: 1.25rem;
+  line-height: 1.6em;
+  color: #333;
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.6em;
+  color: #333;
+}
+
+hr.stylish {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+  margin: 5px 0;
+}
+
+.nav-item {
+  border: none;
+}
+
+button {
+  padding: 5px 10px;
+  color: white;
+  background: #272822;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+details[open] summary ~ * {
+  animation: sweep .4s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-top: -10px}
+  100%  {opacity: 1; margin-top: 0px}
+}
+
+.home-main {
+  margin: 1rem 0;
+}
+
+#_progress {
+  --scroll: 0%;
+  background: linear-gradient(to right, rgb(51, 51, 51) var(--scroll), transparent 0);
+  position: fixed;
+  width: 100%;
+  height: .33rem;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.featured-posts {
+  padding: .75rem 0 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+}
+
+.content {
+  margin: 1rem 0;
+}
+
+// media queries
+@media screen and (max-width: 700px) {
+  body {
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .nav-item {
+    font-size: 0.8rem;
+  }
+}
