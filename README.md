@@ -4,7 +4,7 @@ This is my personal blog's Jekyll template that I've been optimizing for perform
 I personally do not approve of personal blogs bloated with hundreds of kilobytes of trackers and analytics code. 
 
 ### Performance
-![](./tmp/perf.jpg)
+![](./tmp/perf-1.jpg)
 
 Images (clockwise from top left)
 
