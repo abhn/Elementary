@@ -1,24 +1,27 @@
 # Elementary
-This is my personal blog's template that I've been optimizing for performance, accessibility, usability, readability and simplicity in general. 
+This is my personal blog's Jekyll template that I've been optimizing for performance, accessibility, usability, readability and simplicity in general. 
 
-I personally do not approve of personal blogs bloated with hundreds of kilobytes of trackers and analytics code. This theme could be best friends with plugins like [uBlock Origin](https://github.com/gorhill/uBlock).
+I personally do not approve of personal blogs bloated with hundreds of kilobytes of trackers and analytics code. 
 
-#### Google Page Speed score
-<img src="./tmp/perf.jpg" alt="100 on mobile and desktop on Google Page Speed" class="image--center" />
+### Performance
+![](./tmp/perf.jpg)
 
----
-#### Median load time (From Cloudflare)
-<img src="./tmp/median-load.png" alt="Minimal load times screenshot from Cloudflare" class="image--center" />
+Images (clockwise from top left)
 
----
+- Perfect 100 Google Page Speed score on both mobile and desktop
+- Kindle's experimental browser running the theme
+- Median load time (From Cloudflare) is less than a second
+- 100% cached by Cloudflare CDN
 
-#### Caching statistics
-<img src="./tmp/caching.png" alt="100% Caching" class="image--center" />
+### Dark mode
+![](./tmp/dark-mode.gif)
 
-### Accessibility
-Theme doesn't mess up browser's default tab navigation. JavaScript is optional (Dark mode relies on JavaScript).
+Note: Dark mode requires JavaScript
 
-<img src="./tmp/kindle.png" alt="Theme on Kindle" class="image--center" />
+### Scroll progress
+![](./tmp/scroll-progress.gif)
+
+Note: Scroll progress requires JavaScript
 
 ### Demo
 <a href="https://elementary-jekyll.github.io/">https://elementary-jekyll.github.io/</a>
@@ -31,7 +34,7 @@ Theme doesn't mess up browser's default tab navigation. JavaScript is optional (
 - Reading progress slider on top (requires JavaScript)
 - JavaScript is optional (turn it off in `_config.yml`)
 - No request made to any third party
-- Any many more...
+- Any much more...
 
 ### Installation
 - Add Elementary repository as a submodule to your Jekyll blog `git submodule add git@github.com:abhn/Elementary.git elementary`
