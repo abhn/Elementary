@@ -40,4 +40,11 @@ body.dark  {
   input::placeholder {
     color: var(--color__gray--light)
   }
+  ._progress-wrapper {
+    background-color: rgb(51, 51, 51);
+  }
+
+  #_progress {
+    background: linear-gradient(to right, rgb(204, 204, 204) var(--scroll), transparent 0);
+  }
 }
