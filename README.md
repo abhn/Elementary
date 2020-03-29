@@ -36,12 +36,29 @@ Note: Scroll progress requires JavaScript
 - No request made to any third party
 - Any much more...
 
-### Installation
-- Add Elementary repository as a submodule to your Jekyll blog `git submodule add git@github.com:abhn/Elementary.git elementary`
-- Add `theme: elementary` to your `_config.yml`
-- Add `gem 'elementary', path: 'elementary'` to your `Gemfile`
-- Run `bundle install` command in your project directory
-- Add `./elementary` to `exclude` section of `_config.yml` so that the theme's files aren't compiled into the final site
+### Installation (Prerequisite: A working Jekyll site)
+- If you don't have a Jekyll site, read up how to create one here: [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/)
+- Add Elementary repository as a submodule to your Jekyll blog by running the following command.
+```
+git submodule add git@github.com:abhn/Elementary.git elementary
+```
+- Tell Jekyll it has to use Elementary as theme by adding the following to your `_config.yml` (in case you're wondering where, just add it to the bottom on a new line). 
+```
+theme: elementary
+```
+- Add the following to your `Gemfile`
+```
+source 'https://rubygems.org'
+gem 'elementary', path: 'elementary'
+```
+- Run `bundle install` command in your project directory and make sure there are no errors
+- Add `./elementary` to `exclude` section of `_config.yml` so that the theme's files aren't compiled into the final site by adding the following to your `_config.yml` (if `exclude` key exists, just add a new item to it)
+```
+exclude:
+  - ./elementary
+```
+- Run command `bundle exec jekyll serve` to run local server (open browser to [http://localhost:4000](http://localhost:4000) to view the site).
+- Run command `bundle exec jekyll build` to output a production build to the `_site` directory.
 
 ### Customization
 - You're free to make any edits to the theme's files in the submodule. You can also `git pull origin master` from the submodule directory to update the theme in case I push updates, but you don't have to.
