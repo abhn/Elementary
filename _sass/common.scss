@@ -36,11 +36,11 @@ img {
 }
 
 code, pre {
-  font-family: var(--typography__default);
+  font-family: monospace;
   background-color: #eee;
   letter-spacing: 1px;
-  font-size: 1.1rem;
-  padding: 5px;
+  font-size: 0.9rem;
+  padding: 2.5px;
   overflow-x: scroll;
 }
 
@@ -289,7 +289,6 @@ table {
 
   th, td {
     padding: 5px;
-    border: 1px solid black;
   }
 }
 
