@@ -4,7 +4,7 @@ title: Tags
 ---
 
 {% assign alldocs = site.documents %}
-{% assign alltags =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag %}
+{% assign alltags =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by_exp: "tag","tag" %}
 
 <p>
   Articles on similar topics are grouped together by tags. Click on any tag to find all the articles 'tagged' with that tag.
