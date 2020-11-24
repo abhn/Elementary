@@ -10,6 +10,8 @@
   <meta name="description" content="{{ description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncate: 160 }}" />
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" href="/assets/fonts/open-sans-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/open-sans-v17-latin-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/main.css"/>
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml" />
   <title>{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>
