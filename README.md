@@ -1,3 +1,11 @@
+# Unmaintained - Blog moved to Wordpress
+I've moved my blog to wordpress and ported this theme to Wordpress - [https://github.com/abhn/Elementary-Wordpress](https://github.com/abhn/Elementary-Wordpress).
+
+Due to a crunch of time, updates here may or may not happen. Please check the Wordpress theme for updates.
+
+Relevant blog article: [Life Goes Full Circle – Blog Back To WordPress](https://www.nagekar.com/2021/01/life-goes-full-circle-blog-back-to-wordpress.html)
+
+
 # Elementary
 This is my personal blog's Jekyll template that I've been optimizing for performance, accessibility, usability, readability and simplicity in general. 
 
